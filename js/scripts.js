@@ -1,8 +1,14 @@
 // business logic
+
 var leapYear = function(year){
+  if (year % 4 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
-}
-
+// jQuery interface logic
 $(document).ready(function() {
   $('form#leap-year').submit(function(event){
     event.preventDefault();
