@@ -5,10 +5,21 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>leap year detector</title>
   </head>
   <body>
-
-
+    <div class='container'>
+      <h1>leap year detector</h1>
+      <form id='leap-year'>
+        <div class='form-group'>
+          <label for="year">enter a year to find out if it's a leap year</label>
+          <input id='year' type="text">
+        </div>
+        <button type="submit" class='btn'>find out!</button>
+      </form>
+      <div id='result'>
+        <p><span class='year'></span> is <span class='not'> a leap year.</span></p>
+      </div>
+    </div>
   </body>
   </html>
